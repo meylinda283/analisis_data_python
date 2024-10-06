@@ -118,7 +118,7 @@ max_date = days_df["dteday"].max()  # Mendapatkan tanggal maksimum
 # Sidebar untuk pengaturan filter
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("sepeda.jpeg")
+    st.image("dashboard\sepeda.jpeg")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
