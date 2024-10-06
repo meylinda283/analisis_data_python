@@ -108,7 +108,7 @@ def create_rfm_df(df):
     return rfm_df
     
 # Membaca dataset hari dari file CSV
-days_df = pd.read_csv("dashboard\days.csv")
+days_df = pd.read_csv("dashboard/days.csv")
 
 # Mengkonversi kolom 'dteday' menjadi tipe datetime
 days_df['dteday'] = pd.to_datetime(days_df['dteday'])
@@ -118,7 +118,7 @@ max_date = days_df["dteday"].max()  # Mendapatkan tanggal maksimum
 # Sidebar untuk pengaturan filter
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("dashboard\sepeda.jpeg")
+    st.image("dashboard/sepeda.jpeg")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
